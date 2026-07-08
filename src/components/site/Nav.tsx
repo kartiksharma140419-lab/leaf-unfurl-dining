@@ -2,12 +2,13 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { LeafGlyph } from "@/components/brand/LeafGlyph";
 
-const LINKS = [
-  { to: "/", label: "Story", hash: "#roots" },
-  { to: "/menu", label: "Menu" },
-  { to: "/", label: "Gallery", hash: "#gallery" },
-  { to: "/", label: "Reviews", hash: "#reviews" },
-] as const;
+type NavLink = { label: string; href: string };
+const LINKS: NavLink[] = [
+  { label: "Story", href: "/#roots" },
+  { label: "Menu", href: "/menu" },
+  { label: "Gallery", href: "/#gallery" },
+  { label: "Reviews", href: "/#reviews" },
+];
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -48,7 +49,7 @@ export function Nav() {
           {LINKS.map((l) => (
             <li key={l.label}>
               <a
-                href={l.hash ? l.hash : l.to}
+                href={l.href}
                 className="font-accent text-[11px] text-[color:var(--color-malai)]/80 hover:text-[color:var(--color-marigold)] transition-colors"
               >
                 {l.label}
@@ -56,6 +57,14 @@ export function Nav() {
             </li>
           ))}
         </ul>
+
+        {/* Reserve CTA — always visible */}
+        <a
+          href="/#reserve"
+          className="font-accent text-[11px] px-5 py-3 rounded-sm bg-[color:var(--color-marigold)] text-[color:var(--color-tandoor)] hover:bg-[color:var(--color-gold)] transition-colors shadow-[0_10px_30px_-10px_rgba(225,137,43,0.6)]"
+        >
+          Reserve a Table
+        </a>
 
         {/* Reserve CTA — always visible */}
         <Link
