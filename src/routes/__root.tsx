@@ -77,14 +77,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Urban Leaf Café — Fine North Indian Dining, From Root to Ritual" },
+      {
+        name: "description",
+        content:
+          "Slow-simmered curries, tandoor-fired meats, and breads pulled apart by hand — North India, plated with intention, in a room built for lingering.",
+      },
+      { property: "og:title", content: "Urban Leaf Café — From Root to Ritual" },
+      {
+        property: "og:description",
+        content: "Fine North Indian dining, grown in the city. Every leaf holds a feast.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
