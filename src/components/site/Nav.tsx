@@ -65,15 +65,6 @@ export function Nav() {
         >
           Reserve a Table
         </a>
-
-        {/* Reserve CTA — always visible */}
-        <Link
-          to="/"
-          hash="reserve"
-          className="font-accent text-[11px] px-5 py-3 rounded-sm bg-[color:var(--color-marigold)] text-[color:var(--color-tandoor)] hover:bg-[color:var(--color-gold)] transition-colors shadow-[0_10px_30px_-10px_rgba(225,137,43,0.6)]"
-        >
-          Reserve a Table
-        </Link>
       </nav>
     </header>
   );
