@@ -39,7 +39,7 @@ export function Gallery() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="scrollbar-hide flex snap-x snap-mandatory gap-6 overflow-x-auto px-6 md:px-10 pb-6"
-          style={{ scrollbarWidth: "none" }}
+          style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}
         >
           {SHOTS.map((s, i) => (
             <figure

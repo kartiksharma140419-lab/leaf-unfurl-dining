@@ -55,7 +55,7 @@ export function DishCard({ dish, i = 0 }: { dish: Dish; i?: number }) {
           </div>
         </div>
       )}
-      <div className="flex flex-col gap-2 p-5">
+      <div className="flex flex-col gap-2 p-3 sm:p-5">
         <div className="flex items-baseline justify-between gap-4">
           <h3 className="font-display text-xl leading-tight text-[color:var(--color-malai)]">{dish.name}</h3>
           <span className="font-accent text-[13px] text-[color:var(--color-marigold)] shrink-0">₹{dish.price}</span>

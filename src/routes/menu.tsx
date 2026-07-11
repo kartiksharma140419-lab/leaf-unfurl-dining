@@ -63,7 +63,7 @@ function MenuPage() {
 
         {/* Categories */}
         {MENU.map((cat) => (
-          <section id={cat.id} key={cat.id} className="relative py-20 md:py-28">
+          <section id={cat.id} key={cat.id} className="relative py-12 md:py-24">
             <div className="mx-auto max-w-[1400px] px-6 md:px-10">
               <div className="mb-12 max-w-2xl">
                 <p className="font-accent text-[10px] text-[color:var(--color-gold)] mb-3">
@@ -103,7 +103,7 @@ function MenuPage() {
                       <span className="font-accent text-[13px] text-[color:var(--color-marigold)] whitespace-nowrap justify-self-end">
                         ₹{d.price}
                       </span>
-                      <p className="font-body text-[13px] leading-[1.65] text-[color:var(--color-malai)]/65 md:hidden col-span-2 -mt-3">
+                      <p className="font-body text-[13px] leading-[1.65] text-[color:var(--color-malai)]/65 md:hidden col-span-2 mt-1">
                         {d.description}
                       </p>
                     </li>

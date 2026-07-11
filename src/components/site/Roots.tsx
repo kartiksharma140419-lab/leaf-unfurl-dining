@@ -57,7 +57,7 @@ export function Roots() {
           </motion.div>
 
           {/* Parallax image stack */}
-          <div className="relative h-[640px] md:h-[720px]">
+          <div className="relative h-[380px] sm:h-[500px] md:h-[720px]">
             <motion.div
               initial={{ y: 40, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}

@@ -76,7 +76,7 @@ export function Hero() {
           alt="A chef's hands tearing a blistered amritsari kulcha beside a glowing tandoor oven, warm steam rising"
           width={1920}
           height={1280}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover will-change-transform transform-gpu"
           initial={{ scale: 1.08 }}
           animate={reduce ? { scale: 1.14 } : { scale: 1.04 }}
           transition={{ duration: reduce ? 15 : 8, ease: "easeOut" }}
